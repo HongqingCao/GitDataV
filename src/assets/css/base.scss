@@ -1,0 +1,21 @@
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: none;
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+    color: #34495e;
+    font-family:YouYuan,Helvetica Neue,Arial,sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+#app {
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0 auto;
+    text-align: center
+}
