@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>vue-portal-web</name>
+	<name>small-app</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,25 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1529996833180</id>
-			<name></name>
-			<type>26</type>
-			<matcher>
-				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-false-false-node_modules</arguments>
-			</matcher>
-		</filter>
-		<filter>
-			<id>1530018458519</id>
-			<name></name>
-			<type>26</type>
-			<matcher>
-				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-false-false-node_modules</arguments>
-			</matcher>
-		</filter>
-		<filter>
-			<id>1530386849899</id>
+			<id>1528300845243</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
