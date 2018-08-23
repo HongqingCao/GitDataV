@@ -1,43 +1,27 @@
-# 极客图书小程序
+# gitdata
 
-采用mpvue配合小程序原生API以及原生组件完成前端开发，Koa2中件间组合mysql完成后端开发独立完成全栈开发图书小程序。实现了个人中心、添加图书（扫二维码）、图书列表、图书详情、评论模块、评论列表等功能
+> my github data screen
 
+## Build Setup
 
-[源码地址](https://github.com/HongqingCao/geekbook)
-
-###### ![实例效果](https://user-gold-cdn.xitu.io/2018/8/9/1651ebea003e760b?w=374&h=666&f=gif&s=5053827)
-
-
-## 前台：
-#### Install
 ``` bash
-npm install 
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
 ```
 
-#### 运行
-``` bash
-npm run dev  
-```
-
-## 服务端：（server文件夹）
-#### Install
-``` bash
-npm install 
-```
-
-#### 运行
-``` bash
-npm run dev  
-```
-
-
-### 说明：
-
- 1. 小程序安装环境和使用在这里不多说明
-
- 
-
-## License
-
-[MIT](LICENSE)
-
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

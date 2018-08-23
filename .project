@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>small-app</name>
+	<name>gitdata</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1528300845243</id>
+			<id>1534512004625</id>
 			<name></name>
 			<type>26</type>
 			<matcher>

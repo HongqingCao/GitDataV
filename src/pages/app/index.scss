@@ -1,0 +1,118 @@
+
+.app-page{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .text-container {
+        height: 90vh;
+        display: flex;
+      
+        align-items: center;
+        .tm-content {
+            z-index: 1001;
+            
+            &.ml-auto{
+                margin-left: auto!important;
+                padding-bottom: 20px;
+                
+            }
+            .content-box{
+                padding: 15px;
+                  .subscribe-form{
+                    .form-section {
+                        color: #FFFFFF;
+                        background-color: transparent;
+                    }  
+                }
+                
+                .mb-5{
+                    margin-bottom: 3rem!important;
+                    color: #FFFFFF;
+                    font-size:large;
+                    h1{
+                       color: #FFFFFF;
+                       font-size: 4rem; 
+                    }
+                }
+                .subscribe-form{
+                    .form-section{
+                        color: #FFFFFF;
+                        background-color: transparent;
+                        .form-control {
+                            height: 50px;
+                            color: #FFFFFF;
+                            border-radius: .5rem;
+                            background-color: transparent;
+                            border: 1px solid #FFFFFF;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-size: 1.5rem;
+                            font-weight: 300;
+                            padding: 0.75rem 1.2rem;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            &::-webkit-input-placeholder {
+                             color: #FFFFFF;
+                             font-size: 1.5rem;
+                             }
+                        }
+                        .tm-btn-subscribe {
+                            height: 50px;
+                            background-color: #006699;
+                            border-radius: .5rem;
+                            border-color: white;
+                            padding: 0.75rem 1.6rem;
+                            font-weight: 300;
+                            font-size: 1.5rem;
+                            cursor: pointer;
+                            @media screen and (max-width: 768px){
+                             margin-top: 20px;
+                          }
+                        }
+                        .help-box{
+                            padding: 10px 0 20px 10px;
+                           color: #843534;
+                           font-size: 1.5rem;
+                           strong{
+                               position: absolute;
+                               background: #fff;
+                               border-radius: 5px;
+                               padding: 0 8px 0 8px;
+                               font-size: 1.5rem;
+                               line-height: 3rem;
+                               
+                                   &:before{
+                                   z-index: 999;
+                                   content: '';
+                                   display: block;
+                                   position: relative;
+                                   width: 0;
+                                   height: 0;
+                                   border-left: 10px solid transparent;
+                                   border-right: 10px solid transparent;
+                                   border-bottom: 10px solid #fff;
+                                   margin: -9px 0 0 20px; 
+                               }
+                               a{
+                                   color: #BD2C00;
+                               }
+                           }
+                           p{
+                               color: #fff;
+                               button{
+                                   background: none;
+                                   color:   #E6E6FA ;
+                                   cursor: pointer;
+                                   border-bottom: 1px solid #E6E6FA ;
+                               }
+                           }
+                        }
+                    }    
+                }
+            }
+          
+        }
+    }
+}

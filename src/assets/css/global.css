@@ -1,0 +1,35 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body{
+    min-height: 100%;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;  
+    overflow-y: scroll;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    top: 0;
+	right: 0;
+	right: 0;
+	bottom: 0;
+    }
+*{
+	box-sizing: border-box;
+}
+table { border-collapse:collapse; border-spacing:0;}
+a{cursor: pointer;text-decoration: none;}
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup { font-style:normal; font-weight: normal;}
+del,ins{text-decoration:none;}
+ol,ul,li { list-style:none;}
+caption,th { text-align:left;}
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal;}
+q:before, q:after { content:'';}
+abbr,acronym { border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:normal;font-weight:normal; outline:none;border: none;}
+input,button,textarea,select{*font-size:100%;}
+textarea { resize:none;}
+i, em, strong { font-style:normal;}
