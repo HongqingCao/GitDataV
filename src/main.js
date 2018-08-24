@@ -9,7 +9,7 @@ import Vcomp from './components/index'
 import Axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/iconfont/iconfont.css'
-import './assets/css/global.css'
+import './assets/css/global.scss'
 
 Vue.use(VueParticles)
 Vue.use(VCharts)
