@@ -124,7 +124,7 @@ export default {
 	    			this.noMyevent = true
 	    		}else{
 	    			this.myevent = data1
-	    			console.log(this.myevent)
+	    			//console.log(this.myevent)
 	    		}
 	    		
 	    		//每个仓库的大小

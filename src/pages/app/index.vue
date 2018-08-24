@@ -7,7 +7,7 @@
 				<div class= "tm-content col-md-6 col-sm-8 col-xs-12 ml-auto section">
 					<div class="content-box">
 						<header class="mb-5"><h1>GitDataV</h1></header>
-						<P class="mb-5">一个用vue构建的github数据可视化网站。通过它，您可以更加直观看到您在github里的一些数据情况</P>
+						<P class="mb-5">一个用Vue构建的Github"可视化大数据平台"。通过它，您可以更加直观看到您在Github里的一些数据情况</P>
 			            <div class="subscribe-form">
 			       	    	<div class="row form-section">
 								<div class="col-sm-8 col-xs-10">

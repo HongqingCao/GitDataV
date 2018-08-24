@@ -1,5 +1,8 @@
 <template>
-	<ul class="cb-slideshow">
+	<ul class="slide-box">
+        <li></li>
+        <li></li>
+        <li></li>
         <li></li>
     </ul>
 </template>
@@ -11,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss">
-	.cb-slideshow {
+.slide-box {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -32,15 +35,35 @@ export default {
         opacity: 0;
         z-index: 0;
         -webkit-backface-visibility: hidden;
-        -webkit-animation: imageAnimation 20s linear infinite 0s;
-        -moz-animation: imageAnimation 20s linear infinite 0s;
-        -o-animation: imageAnimation 20s linear infinite 0s;
-        -ms-animation: imageAnimation 20s linear infinite 0s;
-        animation: imageAnimation 20s linear infinite 0s;
+        -webkit-animation: imageAnimation 48s linear infinite 0s;
+        -moz-animation: imageAnimation 48s linear infinite 0s;
+        -o-animation: imageAnimation 48s linear infinite 0s;
+        -ms-animation: imageAnimation 48s linear infinite 0s;
+        animation: imageAnimation 48s linear infinite 0s;
         
         &:nth-child(1) { 
-              background-image:url(../../assets/bg-1.gif)
+              background-image:url(../../assets/bg-1.jpg)
         }
+        &:nth-child(2) { 
+		    background-image: url(../../assets/bg-2.jpg);
+		    -webkit-animation-delay: 12s;
+		    -moz-animation-delay: 12s;
+		    -o-animation-delay: 12s;
+		    -ms-animation-delay: 12s;
+		    animation-delay: 12s; 
+		}
+		 &:nth-child(3) { 
+		    background-image: url(../../assets/bg-3.jpg);
+		       -webkit-animation-delay: 24s;
+			    -moz-animation-delay: 24s;
+			    -o-animation-delay: 24s;
+			    -ms-animation-delay: 24s;
+			    animation-delay: 24s; 
+		}
+		&:nth-child(4) { 
+		    background-image: url(../../assets/bg-1.jpg);
+		    animation-delay: 36s; 
+		}
     }
 }
 @keyframes imageAnimation { 

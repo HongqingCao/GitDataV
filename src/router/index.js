@@ -6,7 +6,7 @@ import data from '@/pages/data'
 Vue.use(Router)
 
 export default new Router({
-	mode:'hash',
+	mode:'history',
   routes: [
     {
       path: '/',

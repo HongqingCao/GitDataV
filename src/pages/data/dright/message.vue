@@ -34,7 +34,6 @@ export default {
     setInterval(_ => { 	
     	if(this.getData.length - 7 >0){
     		let vh = this.getData.length -7
-    		console.log(vh)
     		if(this.activeIndex < vh) {
 		        this.activeIndex += 1
 		      } else {
