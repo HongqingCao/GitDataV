@@ -1,13 +1,13 @@
 <template>
 	<div>
-		<div class="modal fade" :class="{in: isShow}">
+		<div class="modal pm-box fade" :class="{in: isShow}">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close"><span @click="closebtn">&times;</span></button>
 		        <h4 class="modal-title">GitDataV服务条款</h4>
 		      </div>
-		      <div class="modal-body">
+		      <div class="modal-body pm-body">
 		      	<p>感谢您使用GitDataV！我们很高兴你在这里。在访问或使用GitDataV之前，请仔细阅读本服务条款协议:</p>
 		       <P>A、GitDataV通过<a href="https://developer.github.com/v3/" target="_blank"></a>github官方api提供接口平台</P>
 		       <p>B、本网站只通过用户账号通过官方接口进行查询您的公开相关数据，并对这些数据进行梳理和在网页上展示，网站本身并不存储您任何相关数据</p>
@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang="scss">
-	.modal{
+	.pm-box{
 		z-index: 9999;
 		display: block;
 	} 
@@ -60,5 +60,9 @@ export default {
 	}
 	.modal-body{
 		font-size: 1.8rem;
+	}
+	.pm-body{
+		display: block;
+		height: auto;
 	}
 </style>

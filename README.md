@@ -6,8 +6,8 @@
  最近的粉丝(✔)、最近的跟随(✔)、最新信息(✔)  
 左上角箭头小彩蛋： 全屏(✔)、 国际化语言切换（开发中...）、皮肤切换（开发中..） 
 
- 
-[源码地址](https://github.com/HongqingCao/GitDataV)
+
+[GitDataV在线使用](https://github.com/HongqingCao/GitDataVhttps://hongqingcao.github.io/GitDataV/)
 
 ###### ![实例效果](https://user-gold-cdn.xitu.io/2018/8/24/1656c59629551995?w=1954&h=934&f=gif&s=3919397)
  
