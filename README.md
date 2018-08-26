@@ -33,7 +33,6 @@ npm run unit
 # run all tests
 npm test
 ```
-## 项目目录结构  
 
 
 ## 项目目录结构  
@@ -75,7 +74,7 @@ npm test
 ```
 
 ## 相关链接  
-- [用Vue构建一个github“可视化大数据平台”-GitDataV，设计开发分享（掘金）](https://juejin.im/post/5b7f6cd46fb9a019f709b17b)
+- [《用Vue构建一个github“可视化大数据平台”-GitDataV，设计开发分享》（掘金）](https://juejin.im/post/5b7f6cd46fb9a019f709b17b)
 
 ## 技术点
 - vue（vue项目构建、指令的灵活运用、组件封装、组件之间通信）
