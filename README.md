@@ -7,10 +7,11 @@
 左上角箭头小彩蛋： 全屏(✔)、 国际化语言切换（开发中...）、皮肤切换（开发中..） 
 
 
-[GitDataV在线使用](https://hongqingcao.github.io/GitDataV/)
+[GitDataV在线演示使用](https://hongqingcao.github.io/GitDataV/)
 
 ###### ![实例效果](https://user-gold-cdn.xitu.io/2018/8/24/1656c59629551995?w=1954&h=934&f=gif&s=3919397)
  
+
 ## 构建和设置
 
 ``` bash
@@ -32,6 +33,8 @@ npm run unit
 # run all tests
 npm test
 ```
+## 项目目录结构  
+
 
 ## 项目目录结构  
 
@@ -70,3 +73,19 @@ npm test
 │    └── data              可视化文件
 ├── static                纯静态资源，不会被wabpack构建。
 ```
+
+## 相关链接  
+- [用Vue构建一个github“可视化大数据平台”-GitDataV，设计开发分享（掘金）](https://juejin.im/post/5b7f6cd46fb9a019f709b17b)
+
+## 技术点
+- vue（vue项目构建、指令的灵活运用、组件封装、组件之间通信）
+- vue-router(路由预备知识：hash和history区别、动态路由、路由切换传参)
+- 网络请求axios(自己封装axios、跨域代理配置)
+- 可视化工具echarts、v-charts处理图形（控制大小、布局、颜色、接受数据格式）
+- es6（基础语法，比如在梳理数据过程中用到map遍历数组、对象和数组转换等等）
+- scss(配置、语法)
+- bootstrap、iconfont（用于没有设计师，作为前端设计能力有限，所以引用这两个）
+
+## License
+
+MIT
