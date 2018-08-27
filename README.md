@@ -9,6 +9,8 @@
 
 [GitDataV在线演示使用](https://hongqingcao.github.io/GitDataV/)
 
+ps:GitDataV在线演示使用,打包发布后有些bug暂时未处理，但不影响正常使用...
+
 ###### ![实例效果](https://user-gold-cdn.xitu.io/2018/8/24/1656c59629551995?w=1954&h=934&f=gif&s=3919397)
  
 
