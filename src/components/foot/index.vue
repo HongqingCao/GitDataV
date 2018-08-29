@@ -24,7 +24,7 @@ export default {
     p{
     	a{
     		color: #E6E6FA ;
-            ursor: pointer;
+            cursor: pointer;
     	}
     }
 }
