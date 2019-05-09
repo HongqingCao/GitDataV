@@ -1,2 +1,2 @@
-import Github from './src/github'
-export default Github
+import Github from "./src/github";
+export default Github;

@@ -1,2 +1,2 @@
-import VpIcon from './src/icon'
-export default VpIcon
+import VpIcon from "./src/icon";
+export default VpIcon;

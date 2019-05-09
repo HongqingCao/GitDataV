@@ -1,20 +1,19 @@
 <template>
-	  <div id="header">
-	  	  <div class="container-fluid">
-	  	  	<navbar></navbar>
-	  	  </div>
-	  </div>
+  <div id="header">
+    <div class="container-fluid">
+      <navbar></navbar>
+    </div>
+  </div>
 </template>
 
 <script>
-import Navbar from './navbar'
+import Navbar from "./navbar";
 export default {
-  name: 'cheader',
-  components:{
-  	Navbar
+  name: "cheader",
+  components: {
+    Navbar
   }
-}
+};
 </script>
 
-<style>
-</style>
+<style></style>
