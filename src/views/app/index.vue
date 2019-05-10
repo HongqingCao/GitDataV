@@ -2,7 +2,11 @@
   <div class="app-page">
     <particles />
     <indexbg />
-    <div class="dropdown"  @mouseenter="showList = true" @mouseleave="showList = false">
+    <div
+      class="dropdown"
+      @mouseenter="showList = true"
+      @mouseleave="showList = false"
+    >
       <span>{{ leng }}</span>
       <ul v-if="showList">
         <li @click="changLen(1)">中文</li>
@@ -104,7 +108,7 @@ export default {
         this.$i18n.locale = "en";
         this.$store.dispatch("setLanguage", "en");
       }
-      this.showList = false
+      this.showList = false;
     },
     generate(username) {
       let name = username;
