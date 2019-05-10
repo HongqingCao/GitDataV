@@ -12,7 +12,9 @@
 ###### ![实例效果](https://user-gold-cdn.xitu.io/2018/8/24/1656c59629551995?w=1954&h=934&f=gif&s=3919397)
  
 ### 开发日志
-2019-05 2.0重构
+
+[2018-09 DEV1.0](https://github.com/HongqingCao/GitDataV/tree/dev1.0)
+[2019-05 DEV2.0 重构](https://github.com/HongqingCao/GitDataV/tree/dev2.0)
 
 ## 构建和设置
 
@@ -47,21 +49,21 @@ npm test
 ├── src                       源码目录  
 │  ├── main.js                入口js文件
 │  ├── router.js              路由
-│  ├── store.js              vuex状态
-│  ├── app.vue               根组件
-│  ├── components            公共组件目录
-│  │  └── index.js           把全部组件遍历出来
-│  ├── lang                  语言切换字典
-│  │  └── index.js           语言切换字典
-│  ├── assets                资源目录，这里的资源会被wabpack构建
-│  │  └── css                css基础重置
-│  │  └── data               可视化界面需要的图片
-│  │  └── iconfont           字体图标
+│  ├── store.js               vuex状态
+│  ├── app.vue                根组件
+│  ├── components             公共组件目录
+│  │  └── index.js            把全部组件遍历出来
+│  ├── lang                   语言切换字典
+│  │  └── index.js            语言切换字典
+│  ├── assets                 资源目录，这里的资源会被wabpack构建
+│  │  └── css                 css基础重置
+│  │  └── data                可视化界面需要的图片
+│  │  └── iconfont            字体图标
 │  │    └── bg.png
-│  └── views               页面目录
-│    ├── app               入口文件
-│    └── data              可视化文件
-├── static                纯静态资源，不会被wabpack构建。
+│  └── views                  页面目录
+│    ├── app                  入口文件
+│    └── data                 可视化文件
+├── static                    纯静态资源，不会被wabpack构建。
 ```
 
 ## 相关链接  
