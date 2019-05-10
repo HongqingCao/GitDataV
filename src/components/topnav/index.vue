@@ -4,7 +4,7 @@
       <li @click="fullBox">
         <icon :type="'quanping'" :size="'2.2rem'" :color="'#fff'"> </icon>
       </li>
-      <li>
+      <li @click="changeLen">
         <icon :type="'yuyanqiehuan'" :size="'2.2rem'" :color="'#fff'"> </icon>
       </li>
       <li>
@@ -18,32 +18,30 @@
 </template>
 
 <script>
+import screenfull from "screenfull";
 export default {
   name: "topnav",
+  computed: {
+    lang: {
+      get() {
+        return this.$store.state.language;
+      }
+    }
+  },
   methods: {
     fullBox() {
-      console.log("点击");
-      if (
-        (document.fullScreenElement && document.fullScreenElement !== null) ||
-        (!document.mozFullScreen && !document.webkitIsFullScreen)
-      ) {
-        if (document.documentElement.requestFullScreen) {
-          document.documentElement.requestFullScreen();
-        } else if (document.documentElement.mozRequestFullScreen) {
-          document.documentElement.mozRequestFullScreen();
-        } else if (document.documentElement.webkitRequestFullScreen) {
-          document.documentElement.webkitRequestFullScreen(
-            Element.ALLOW_KEYBOARD_INPUT
-          );
-        }
+      if (!screenfull.enabled) {
+        return false;
+      }
+      screenfull.toggle();
+    },
+    changeLen() {
+      if (this.lang === "en") {
+        this.$i18n.locale = "zh";
+        this.$store.dispatch("setLanguage", "zh");
       } else {
-        if (document.cancelFullScreen) {
-          document.cancelFullScreen();
-        } else if (document.mozCancelFullScreen) {
-          document.mozCancelFullScreen();
-        } else if (document.webkitCancelFullScreen) {
-          document.webkitCancelFullScreen();
-        }
+        this.$i18n.locale = "en";
+        this.$store.dispatch("setLanguage", "en");
       }
     }
   }

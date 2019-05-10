@@ -4,7 +4,7 @@
       <div class="left">
         <dnumber
           :dheight="110"
-          :title="'公开仓库数'"
+          :title="$t('data.myevent.pubRepos')"
           :size="'4rem'"
           :dnumber="numberData.pubRepos"
           :icon="'kucunguanli'"
@@ -16,7 +16,7 @@
         <div class="content">
           <dnumber
             :dheight="110"
-            :title="'粉丝'"
+            :title="$t('data.myevent.followers')"
             :size="'3rem'"
             :dnumber="numberData.followers"
             :icon="'jindu1'"
@@ -25,7 +25,7 @@
           </dnumber>
           <dnumber
             :dheight="110"
-            :title="'跟随'"
+            :title="$t('data.myevent.following')"
             :size="'3rem'"
             :dnumber="numberData.following"
             :icon="'success'"
@@ -37,7 +37,7 @@
     </div>
     <div class="content-box">
       <databox
-        :title="'仓库数据'"
+        :title="$t('data.myevent.accountData')"
         :dheight="350"
         :icon="'account'"
         :boxb="false"
@@ -45,12 +45,22 @@
         <div class="content-wapper">
           <!-- <ve-line :data="chartData" :extend="extend"></ve-line>-->
           <ve-bar :data="repoData" :extend="extend" :height="'350px'"></ve-bar>
-          <nodata :nodata="'仓库'" v-if="noRepoSize"></nodata>
+          <nodata
+            :nodata="$t('data.myevent.noRepoSize')"
+            v-if="noRepoSize"
+          ></nodata>
         </div>
       </databox>
-      <databox :title="'最近操作详情'" :dheight="220" :icon="'account'">
+      <databox
+        :title="$t('data.myevent.myevent')"
+        :dheight="220"
+        :icon="'account'"
+      >
         <myevent :data="myevent"></myevent>
-        <nodata :nodata="'最近操作'" v-if="noMyevent"></nodata>
+        <nodata
+          :nodata="$t('data.myevent.noMyevent')"
+          v-if="noMyevent"
+        ></nodata>
       </databox>
     </div>
   </div>

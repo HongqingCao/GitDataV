@@ -3,10 +3,10 @@
     <table class="table">
       <thead>
         <tr>
-          <th class="col-md-2">操作时间</th>
-          <th class="col-md-2">类型</th>
-          <th class="col-md-4">操作的仓库</th>
-          <th class="col-md-4">备注</th>
+          <th class="col-md-2">{{ $t("data.myevent.table.time") }}</th>
+          <th class="col-md-2">{{ $t("data.myevent.table.type") }}</th>
+          <th class="col-md-4">{{ $t("data.myevent.table.repos") }}</th>
+          <th class="col-md-4">{{ $t("data.myevent.table.remarks") }}</th>
         </tr>
       </thead>
       <tbody>

@@ -4,16 +4,19 @@
       <databox :title="''" :dheight="720">
         <personal :personalData="personalData" :username="username"></personal>
         <databox
-          :title="'仓库Stars详情'"
+          :title="$t('data.dleft.accountStars')"
           :dheight="280"
           :icon="'account'"
           :boxb="false"
         >
           <ve-pie :data="starData" :extend="extend" :height="'250px'"></ve-pie>
-          <nodata :nodata="'一个Stars'" v-if="noStarData"></nodata>
+          <nodata
+            :nodata="$t('data.dleft.noStarData')"
+            v-if="noStarData"
+          ></nodata>
         </databox>
         <databox
-          :title="'仓库语言分类'"
+          :title="$t('data.dleft.accountLeng')"
           :dheight="280"
           :icon="'account'"
           :boxb="false"
@@ -23,7 +26,10 @@
             :extend="extend"
             :height="'230px'"
           ></ve-ring>
-          <nodata :nodata="'一种语言'" v-if="nolanguageData"></nodata>
+          <nodata
+            :nodata="$t('data.dleft.nolanguageData')"
+            v-if="nolanguageData"
+          ></nodata>
         </databox>
       </databox>
     </div>

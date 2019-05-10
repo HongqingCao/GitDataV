@@ -1,7 +1,7 @@
 <template>
   <div class="loading">
     <icon :type="'socialgithuboutline'" :size="'4rem'" :color="'#888'"> </icon>
-    正在疯狂的计算数据中+-*%....
+    {{ $t("nodata.loading") }}
     <particles />
   </div>
 </template>

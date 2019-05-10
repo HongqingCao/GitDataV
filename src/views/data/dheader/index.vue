@@ -2,7 +2,7 @@
   <div class="header">
     <div class="bg-header">
       <div class="t-title">
-        GitDataV数据平台
+        {{ $t("data.dheader") }}
       </div>
     </div>
   </div>

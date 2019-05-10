@@ -1,92 +1,121 @@
+/* * @Introduce: GitDataV服务条款弹框 * @Author: HongqingCao * @Date: 2019-05-10
+* @Last Modified by: HongqingCao * @Last Modified time: 2019-05-10 */
 <template>
-  <div>
-    <div class="modal pm-box fade" :class="{ in: isShow }">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close">
-              <span @click="closebtn">&times;</span>
-            </button>
-            <h4 class="modal-title">GitDataV服务条款</h4>
-          </div>
-          <div class="modal-body pm-body">
-            <p>
-              感谢您使用GitDataV！我们很高兴你在这里。在访问或使用GitDataV之前，请仔细阅读本服务条款协议:
-            </p>
-            <P
-              >A、GitDataV通过<a
-                href="https://developer.github.com/v3/"
-                target="_blank"
-              ></a
-              >github官方api提供接口平台</P
+  <div class="mode-warp" v-if="isShow">
+    <div class="mode-content">
+      <div class="content-box">
+        <button type="button" class="close">
+          <span @click="closebtn">&times;</span>
+        </button>
+        <div class="title">{{ $t("app.pmodal.title") }}</div>
+        <div class="content">
+          <P>{{ $t("app.pmodal.thanksP") }}</P>
+          <P
+            >{{ $t("app.pmodal.aPone")
+            }}<a href="https://developer.github.com/v3/" target="_blank">{{
+              $t("app.pmodal.aPtwo")
+            }}</a></P
+          >
+          <p>{{ $t("app.pmodal.bP") }}</p>
+          <p>
+            {{ $t("app.pmodal.cPone")
+            }}<a href="https://github.com/HongqingCao" target="_blank"
+              >codercao</a
             >
-            <p>
-              B、本网站只通过用户账号通过官方接口进行查询您的公开相关数据，并对这些数据进行梳理和在网页上展示，网站本身并不存储您任何相关数据
-            </p>
-            <p>
-              C、本网站由于依赖github官方提供接口，对查询的次数有限制，请勿恶意攻击和压力查询,如果网站有问题请及时与开发者：<a
-                href="https://github.com/HongqingCao"
-                target="_blank"
-                >codercao</a
-              >联系
-            </p>
-            <P>D、本网站属于非盈利性质，请勿进行商业用途，源码已开源</P>
-            <p>
-              E、其他条款遵循<a
-                href="https://help.github.com/articles/github-terms-of-service/"
-                target="_blank"
-                >GitHub服务条款</a
-              >
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" @click="closebtn">
-              知道了
-            </button>
-          </div>
+            {{ $t("app.pmodal.cPtwo") }}
+          </p>
+          <p>{{ $t("app.pmodal.dP") }}</p>
+          <p>
+            {{ $t("app.pmodal.ePone")
+            }}<a
+              href="https://help.github.com/articles/github-terms-of-service/"
+              target="_blank"
+              >{{ $t("app.pmodal.ePtwo") }}</a
+            >
+          </p>
+        </div>
+        <div class="footer">
+          <button class="btn btn-default" @click="closebtn">
+            {{ $t("app.pmodal.closebtn") }}
+          </button>
         </div>
       </div>
     </div>
-    <div class="modal-backdrop" :class="{ in: isShow }"></div>
+    <div class="bg"></div>
   </div>
 </template>
 
 <script>
 export default {
   name: "pmodal",
-  props: {
-    isShow: null
-  },
   data() {
     return {
-      sayhidden: false
+      isShow: false
     };
   },
   methods: {
     closebtn() {
-      this.$emit("sayhidden", this.sayhidden);
+      this.isShow = false;
     }
   }
 };
 </script>
 
 <style lang="scss">
-.pm-box {
-  z-index: 9999;
-  display: block;
-}
-.modal-backdrop {
-  filter: blur(2px);
-  z-index: 9997;
-}
-.modal-title {
-  text-align: center;
-}
-.modal-body {
-  font-size: 1.8rem;
-}
-.pm-body {
-  display: block;
-  height: auto;
+.mode-warp {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  .bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 100;
+    filter: blur(2px);
+    background-color: #000;
+  }
+  .mode-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 999999;
+    .content-box {
+      width: 600px;
+      overflow: hidden;
+      margin: 30px auto;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      outline: 0;
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+      background-color: #fff;
+      .close {
+        padding: 10px;
+      }
+      .title {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .content {
+        padding: 15px;
+        font-size: 2rem;
+      }
+      .footer {
+        padding: 15px;
+        text-align: right;
+        border-top: 1px solid #e5e5e5;
+      }
+    }
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="nodata">
     <icon :type="'socialgithuboutline'" :size="'2rem'" :color="'#888'"></icon
-    >您没有{{ nodata }}数据
+    >{{ $t("nodata.pOne") }}{{ nodata }}{{ $t("nodata.pTwo") }}
   </div>
 </template>
 

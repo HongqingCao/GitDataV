@@ -7,16 +7,16 @@
             <button type="button" class="close">
               <span @click="closebtn">&times;</span>
             </button>
-            <h4 class="modal-title">温馨提示</h4>
+            <h4 class="modal-title">{{ $t("nouser.title") }}</h4>
           </div>
           <div class="modal-body">
             <icon :type="'socialgithuboutline'" :size="'4rem'" :color="'#888'">
             </icon
-            >用户名有误，或网络原因无法查找到数据<br />请重新输入用户名，或者刷新浏览器
+            >{{ $t("nouser.pOne") }}<br />{{ $t("nouser.pTwo") }}
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" @click="closebtn">
-              关闭
+              {{ $t("nouser.closebtn") }}
             </button>
           </div>
         </div>

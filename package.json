@@ -1,6 +1,6 @@
 {
-  "name": "git-datav",
-  "version": "0.1.0",
+  "name": "GitDataV",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",

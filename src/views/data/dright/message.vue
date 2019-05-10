@@ -7,7 +7,8 @@
             <icon :type="'tongzhi1'" :size="'1.5rem'" :color="'#F0FF00'"></icon>
             {{ index }}、{{ item.created_at.substring(0, 10) }} &nbsp;&nbsp;{{
               item.actor.login
-            }}&nbsp;给了你一个{{ item.payload.action }}&nbsp;操作
+            }}&nbsp; {{ $t("data.dright.message.pOne") }}
+            {{ item.payload.action }}&nbsp; {{ $t("data.dright.message.pTwo") }}
           </a>
         </li>
       </ul>

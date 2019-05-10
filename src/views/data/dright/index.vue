@@ -2,19 +2,40 @@
   <div class="right-content">
     <div class="top-box">
       <databox :title="''" :dheight="440">
-        <databox :title="'新增粉丝'" :dheight="210" :boxb="false">
+        <databox
+          :title="$t('data.dright.index.followers')"
+          :dheight="210"
+          :boxb="false"
+        >
           <follower :data="followers"></follower>
-          <nodata :nodata="'一个粉丝'" v-if="noFollowing"></nodata>
+          <nodata
+            :nodata="$t('data.dright.index.noFollowers')"
+            v-if="noFollowers"
+          ></nodata>
         </databox>
-        <databox :title="'最近跟随'" :dheight="210" :boxb="false">
+        <databox
+          :title="$t('data.dright.index.following')"
+          :dheight="210"
+          :boxb="false"
+        >
           <follower :data="following"></follower>
-          <nodata :nodata="'一个跟随'" v-if="noFollowing"></nodata>
+          <nodata
+            :nodata="$t('data.dright.index.noFollowing')"
+            v-if="noFollowing"
+          ></nodata>
         </databox>
       </databox>
       <div class="messege">
-        <databox :title="'最新消息'" :dheight="260" :icon="'account'">
+        <databox
+          :title="$t('data.dright.index.messege')"
+          :dheight="260"
+          :icon="'account'"
+        >
           <message :data="messege"></message>
-          <nodata :nodata="'最新消息'" v-if="noMessege"></nodata>
+          <nodata
+            :nodata="$t('data.dright.index.messege')"
+            v-if="noMessege"
+          ></nodata>
         </databox>
       </div>
     </div>

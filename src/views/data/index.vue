@@ -4,7 +4,7 @@
     <topnav></topnav>
     <div class="data-content">
       <div class="data-time">
-        温馨提示: 后续还会继续加功能，请关注我github更新...
+        {{ $t("data.index") }}
       </div>
       <div class="data-main">
         <div class="main-left">
@@ -67,7 +67,6 @@ export default {
               img: img
             };
             this.personalData = objP;
-
             //仓库数、粉丝数、跟随数
             let pubRepos = data.public_repos;
             let followers = data.followers;
@@ -78,10 +77,8 @@ export default {
               following: following
             };
             this.numberData = objN;
-
             this.pageShow = false;
           }
-
           return;
         })
         .catch(err => {
@@ -90,12 +87,6 @@ export default {
           console.log(err.message);
         });
     }
-    //计算年月
-    //	joindate(sinceDate){
-    //      var since = sinceDate.getFullYear();
-    //      var sinceMonth = sinceDate.getMonth();
-    //      return since + "-" + sinceMonth
-    //	}
   }
 };
 </script>
