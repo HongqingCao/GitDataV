@@ -45,7 +45,7 @@ export default {
       }
     },
     goHome() {
-      this.$router.push({path:"/"});
+      this.$router.push({ path: "/" });
     }
   }
 };
