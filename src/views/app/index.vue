@@ -61,6 +61,7 @@
 
 <script>
 import pmodal from "./pmodal";
+import Cookies from "js-cookie";
 export default {
   components: {
     pmodal
@@ -92,6 +93,14 @@ export default {
       } else {
         this.leng = "中文";
       }
+    }
+  },
+  created() {
+    const chooseLanguage = Cookies.get("language");
+    if (chooseLanguage === "en") {
+      this.leng = "English";
+    } else {
+      this.leng = "中文";
     }
   },
   methods: {
