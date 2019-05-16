@@ -10,7 +10,7 @@
       <li>
         <icon :type="'ziyuan'" :size="'2.2rem'" :color="'#fff'"> </icon>
       </li>
-      <li>
+      <li @click="goHome">
         <icon :type="'zuojiantou1'" :size="'2.2rem'" :color="'#fff'"> </icon>
       </li>
     </ul>
@@ -43,6 +43,9 @@ export default {
         this.$i18n.locale = "en";
         this.$store.dispatch("setLanguage", "en");
       }
+    },
+    goHome() {
+      this.$router.push({path:"/"});
     }
   }
 };

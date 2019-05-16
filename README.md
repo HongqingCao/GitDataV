@@ -4,7 +4,7 @@
  个人信息(✔)，仓库stars情况(✔)，仓库语言分类(✔)  
  仓库公开数量(✔)、粉丝数量(✔)、跟随数量(✔)、仓库数据(✔)、最近你的操作(✔)  
  最近的粉丝(✔)、最近的跟随(✔)、最新信息(✔)  
-左上角箭头小彩蛋： 全屏(✔)、 国际化语言切换（✔）、皮肤切换（开发中..） 
+左上角箭头小彩蛋： 全屏(✔)、 国际化语言切换（✔）、返回首页（✔）、皮肤切换（开发中..） 
 
 
 [GitDataV在线演示使用](https://hongqingcao.github.io/GitDataV/)
@@ -13,8 +13,8 @@
  
 ### 开发日志
 
-[2018-09 DEV1.0](https://github.com/HongqingCao/GitDataV/tree/dev1.0)
-[2019-05 DEV2.0 重构](https://github.com/HongqingCao/GitDataV/tree/dev2.0)
+- [2018-09 DEV1.0](https://github.com/HongqingCao/GitDataV/tree/dev1.0)
+- [2019-05 DEV2.0 重构](https://github.com/HongqingCao/GitDataV/tree/dev2.0)
 
 ## 构建和设置
 
