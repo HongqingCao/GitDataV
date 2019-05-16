@@ -79,7 +79,7 @@ export default {
   methods: {
     getData(username) {
       this.$axios
-        .get("https://api.github.com/users/" + username + "/repos")
+        .get("/api/users/" + username + "/repos")
         .then(response => {
           let data = JSON.parse(JSON.stringify(response.data));
           if (data.length < 1) {
