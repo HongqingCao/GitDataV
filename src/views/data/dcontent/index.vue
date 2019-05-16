@@ -121,7 +121,7 @@ export default {
   },
   methods: {
     getData(username) {
-      let comUrl = "/api/users/";
+      let comUrl = "https://api.github.com/users/";
       let url1 = comUrl + username + "/events";
       let url2 = comUrl + username + "/repos";
       this.$axios

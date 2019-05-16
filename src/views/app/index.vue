@@ -126,7 +126,7 @@ export default {
         return;
       } else {
         this.$axios
-          .get("/api/users/" + name)
+          .get("https://api.github.com/users/" + name)
           .then(response => {
             let res = JSON.parse(JSON.stringify(response));
             if (res.status === 200) {
