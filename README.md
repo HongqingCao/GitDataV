@@ -9,10 +9,10 @@
 
 [GitDataV在线演示使用](https://hongqingcao.github.io/GitDataV/)
 
-###### （ps:在线演示为dev.1.0版本,更多功能，可切换dev.2.0或者master分支clone本地运行）
+（ps:在线演示为dev.1.0版本,更多功能，可切换dev.2.0或者master分支clone本地运行）
 
 ###### ![实例效果](https://user-gold-cdn.xitu.io/2018/8/24/1656c59629551995?w=1954&h=934&f=gif&s=3919397)
-###### ![实例效果](https://github.com/HongqingCao/GitDataV/tree/master/docs/static/img/yyx.png)
+###### ![实例效果](https://user-gold-cdn.xitu.io/2019/7/9/16bd4cd0238a41ba?w=1897&h=940&f=png&s=494477)
  
 ### 开发日志
 
