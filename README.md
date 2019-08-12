@@ -18,6 +18,7 @@
 
 - [2018-09 DEV1.0](https://github.com/HongqingCao/GitDataV/tree/dev1.0)
 - [2019-05 DEV2.0 重构](https://github.com/HongqingCao/GitDataV/tree/dev2.0)
+- [2019-08 DEV2.0 添加数字滚动效果](https://github.com/HongqingCao/GitDataV/tree/dev2.0)
 
 ## 构建和设置
 
