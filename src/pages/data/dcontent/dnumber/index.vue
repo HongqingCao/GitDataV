@@ -5,7 +5,7 @@
 		</div>
 		<div class="number-box">
 			<div class="title">{{title}}</div>
-			<div class="number" :style="styles">{{dnumber}}</div>
+			<div class="number" :style="styles">{{amount}}</div>
 		</div>
 	</div>
 </template>
@@ -15,12 +15,55 @@ export default {
   name: 'dnumber',
   props: {
     size: [Number, String],
+    time: {
+      type: Number,
+      default:2
+    },
     title: String,
     color: String,
-    dnumber:Number,
+    dnumber:{
+      type: Number,
+      default:0
+    },
     icon: String,
     dheight: Number
   },
+  data () {
+     return {
+      amount: 0
+    }
+  },
+  watch: {
+    dnumber(val){
+      if(val > 0){
+        this.numFun(0,val)
+      }
+    }
+   },
+  methods: {
+    numFun(startNum,maxNum) {
+      var that = this
+      let numText = startNum;
+      let golb; // 为了清除requestAnimationFrame
+      function numSlideFun(){ // 数字动画
+          //numText+=1; // 速度的计算可以为小数 。数字越大，滚动越快
+          if(maxNum<100){
+            numText+=1;
+          }else{
+            numText+= 5;
+          }
+          if(numText >= maxNum){
+              numText = maxNum;
+              cancelAnimationFrame(golb);
+          }else {
+              golb = requestAnimationFrame(numSlideFun);
+          }
+        that.amount=numText
+        // console.log(numText)
+      }
+       numSlideFun(); // 调用数字动画
+    }
+   },
   computed: {
     styles() {
       const style = {}
