@@ -4,7 +4,7 @@
  * @Autor: caohq33221
  * @Date: 2021-05-10 17:23:35
  * @LastEditors: codercao
- * @LastEditTime: 2021-05-12 09:40:21
+ * @LastEditTime: 2021-06-17 14:05:56
 -->
 <template>
   <div class="home-warpper">
@@ -14,11 +14,11 @@
     </div>
   </div>
 </template>
-<script>
+<script lang='ts'>
 import { useRouter } from 'vue-router'
 
-import Header from '@/pages/home/components/header.vue'
-import TemplateList from '@/pages/home/components/templateList.vue'
+import Header from './components/header.vue'
+import TemplateList from './components/templateList.vue'
 export default {
   components: {
     Header,
@@ -26,13 +26,14 @@ export default {
   },
   setup() {
     const router = useRouter()
-    const creatProject = (data) => {
+    const creatProject = (data: any) => {
       router.push({
         path: '/dashboard',
-        query:{
-          
-        }
+        query: {},
       })
+    }
+    return {
+      creatProject,
     }
   },
 }

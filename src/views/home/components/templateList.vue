@@ -4,7 +4,7 @@
  * @Autor: caohq33221
  * @Date: 2021-05-11 17:24:59
  * @LastEditors: codercao
- * @LastEditTime: 2021-05-12 09:39:06
+ * @LastEditTime: 2021-06-17 16:50:08
 -->
 <template>
   <div class="templateList-warpper">
@@ -23,7 +23,7 @@
           class="preview-image"
         />
         <div class="template-mask">
-          <el-button type="primary">创建项目</el-button>
+          <el-button type="primary" @click="creatProject">创建项目</el-button>
           <el-button plain class="preview-btn">预览</el-button>
         </div>
       </div>
@@ -37,12 +37,15 @@
     </div>
   </div>
 </template>
-<script>
+<script lang='ts'>
 export default {
-  methods: {
-    creatProject() {
-      this.$emit('creatProject')
-    },
+  setup(props, ctx) {
+    const creatProject = (data: any) => {
+      ctx.emit('creatProject', data)
+    }
+    return {
+      creatProject,
+    }
   },
 }
 </script>

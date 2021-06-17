@@ -12,7 +12,7 @@ import {
 } from "vue-router"
 
 const Home = () => import('@/views/home/index.vue')
-const Edit = () => import('@/edit/index.vue')
+const Edit = () => import('@/views/edit/index.vue')
 
 const routes: Array<RouteRecordRaw> = [
   {

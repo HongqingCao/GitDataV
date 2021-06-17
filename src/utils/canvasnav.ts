@@ -1,12 +1,11 @@
 var c = Math.min, h = Math.sign, m = Math.max, n = Math.abs, j = .85, k = 10, l = 4;
 interface optType {
   currentIndex?: number;
-  canvas?: HTMLElement;
   timer?: number;
   avgSpeed?: number;
 }
 
-var opt : optType = {};
+var opt  = {};
 opt.currentIndex = 0;
 opt.canvas = document.getElementById('canvas');
 
@@ -109,9 +108,7 @@ var _drawHightlight = function (a) {
 
 
 var draw = function (a) {
-  //console.log(a);
   _drawHightlight(a);
-  //return false;
 
   opt.timer = requestAnimationFrame(function () {
     draw((a + .005) % 1.6)

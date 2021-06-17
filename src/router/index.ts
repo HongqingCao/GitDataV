@@ -4,11 +4,11 @@
  * @Autor: caohq33221
  * @Date: 2021-06-16 16:52:09
  * @LastEditors: codercao
- * @LastEditTime: 2021-06-16 17:14:27
+ * @LastEditTime: 2021-06-17 10:42:37
  */
 
 import { createRouter, createWebHashHistory } from 'vue-router';
-import routes from './routers.ts';
+import routes from './routers';
 
 const router = createRouter({
   history: createWebHashHistory(),

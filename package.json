@@ -6,6 +6,8 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "element-plus": "^1.0.2-beta.48",
+    "sass": "^1.35.1",
     "vue": "^3.0.5",
     "vue-router": "^4.0.9"
   },
@@ -14,6 +16,8 @@
     "@vue/compiler-sfc": "^3.0.5",
     "typescript": "^4.3.2",
     "vite": "^2.3.7",
+    "vite-plugin-babel-import": "^2.0.5",
+    "vite-plugin-style-import": "^1.0.0",
     "vue-tsc": "^0.0.24"
   }
 }

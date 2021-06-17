@@ -4,7 +4,7 @@
  * @Autor: caohq33221
  * @Date: 2021-05-11 13:40:37
  * @LastEditors: codercao
- * @LastEditTime: 2021-05-20 15:41:11
+ * @LastEditTime: 2021-06-17 16:50:57
 -->
 <template>
   <div class="header-warpper">
@@ -29,11 +29,11 @@
   </div>
 </template>
 <script>
-import canvasnav from '@/utils/canvasnav.js'
-import { ref,onMounted } from 'vue'
+import canvasnav from '@/utils/canvasnav'
+import { ref, onMounted } from 'vue'
 export default {
   setup() {
-    let navObj = ref([
+    const navObj = [
       {
         key: 0,
         name: '大屏模板',
@@ -50,7 +50,7 @@ export default {
         key: 3,
         name: '数据看板',
       },
-    ])
+    ]
 
     const clickNav = (key) => {
       canvasnav._toggle(key)
