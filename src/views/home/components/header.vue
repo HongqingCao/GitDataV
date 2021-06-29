@@ -4,7 +4,7 @@
  * @Autor: caohq33221
  * @Date: 2021-05-11 13:40:37
  * @LastEditors: codercao
- * @LastEditTime: 2021-06-17 16:50:57
+ * @LastEditTime: 2021-06-18 17:21:48
 -->
 <template>
   <div class="header-warpper">
@@ -21,7 +21,7 @@
         class="nav-span"
         v-for="item in navObj"
         :key="item.key"
-        @click="clickNav(item.key)"
+        @click="changeNav(item.key,item)"
         >{{ item.name }}</span
       >
     </div>
@@ -32,15 +32,15 @@
 import canvasnav from '@/utils/canvasnav'
 import { ref, onMounted } from 'vue'
 export default {
-  setup() {
+  setup(prors,ctx) {
     const navObj = [
       {
         key: 0,
-        name: '大屏模板',
+        name: '我的可视化',
       },
       {
         key: 1,
-        name: '我的大屏',
+        name: '可视化模板',
       },
       {
         key: 2,
@@ -52,8 +52,9 @@ export default {
       },
     ]
 
-    const clickNav = (key) => {
+    const changeNav = (key,item) => {
       canvasnav._toggle(key)
+      ctx.emit('changeNav',item)
     }
 
     onMounted(() => {
@@ -62,7 +63,7 @@ export default {
 
     return {
       navObj,
-      clickNav,
+      changeNav,
     }
   },
 }
